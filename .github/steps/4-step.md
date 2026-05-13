@@ -1,0 +1,122 @@
+## Step 4: Create, Review, and Merge Your Pull Request
+
+Duck is ready to finalize the development work by creating a pull request, linking it to both issues, getting a review from Copilot, and merging the changes—all from the command line with Copilot CLI.
+
+### 📖 Theory: Pull Requests and Code Review with Copilot CLI
+
+#### Understanding Pull Requests (PRs)
+
+Pull requests are the standard way to propose changes in collaborative development:
+
+- They allow team members to review code before merging
+- They maintain a history of changes and decisions
+- They can be linked to issues for better project tracking
+- They enable automated testing and validation through CI/CD
+
+#### Connecting PRs to Issues
+
+Linking pull requests to issues helps with project management:
+
+- Closes issues automatically when the PR is merged
+- Provides traceability between work items and code changes
+- Helps track progress through the development lifecycle
+- Improves team communication about what's being built
+
+#### Code Review with AI Assistance
+
+GitHub Copilot can act as a reviewer to:
+
+- Suggest improvements to code quality
+- Identify potential bugs or edge cases
+- Recommend best practices and design patterns
+- Provide constructive feedback on implementation
+
+The Copilot CLI enables you to:
+
+- Create pull requests directly from the terminal
+- Request reviews from Copilot or team members
+- Merge changes without leaving the CLI
+- Automate the entire workflow for faster iteration
+
+#### References
+
+- [Creating Pull Requests with GitHub CLI](https://cli.github.com/manual/gh_pr_create)
+- [Linking Issues and PRs](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+- [GitHub Copilot as a Code Reviewer](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
+
+> [!IMPORTANT]
+> If you have restarted your codespace you may need to run `copilot --allow-all` and then authenticate with GitHub again by running `!gh auth login` in your terminal,
+> or use `/login` from within the Copilot CLI session.
+
+### ⌨️ Activity: Complete Your Pull Request Workflow
+
+1. Start an interactive Copilot CLI session (if not already in a session):
+
+   > ![Static Badge](https://img.shields.io/badge/Terminal-text?logo=gnometerminal&labelColor=0969da&color=ddf4ff)
+   >
+   > ```bash
+   > copilot --allow-all --enable-all-github-mcp-tools
+   > ```
+
+2. Create a pull request for your changes and add Copilot as a reviewer:
+
+   > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
+   >
+   > ```prompt
+   > Create a pull request from the current branch with a title "Add calculator enhancements" 
+   > and description that includes the main changes: basic calculator operations and expanded 
+   > functionality with modulo, power, and square root. Make sure to add @copilot as a reviewer 
+   > and request a review on the PR.
+   > List the PR link when it is completely created
+   > ```
+
+3. Attach the pull request to both issues you created earlier:
+
+   > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
+   >
+   > ```prompt
+   > Link the pull request I just created to both the "Create a calculator" and 
+   > "Add more operations" issues so they close automatically when merged.
+   > ```
+
+1. Merge the pull request after Copilot's review is complete:
+
+   > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
+   >
+   > ```prompt
+   > Merge the pull request and close the attached issues
+   > ```
+
+> [!NOTE]
+> When you merge a PR that's linked to issues using "Closes #<issue-number>",
+> GitHub automatically closes those issues. The squash merge option keeps your
+> main branch history clean.
+
+4. Verify that both issues are now closed:
+
+   > ![Static Badge](https://img.shields.io/badge/CLI-Prompt-text?style=flat-square&logo=github-copilot&labelColor=8250df&color=fbefff)
+   >
+   > ```prompt
+   > List the closed issues in the repository to confirm both the "Create a calculator" 
+   > and "Add more operations" issues are now closed.
+   > ```
+
+5. Wait a moment for Mona to check your work, provide feedback, and share the next lesson.
+
+> [!TIP]
+> Use `/share gist` in your Copilot CLI session to save your GitHub Skills exercise session
+> as a GitHub gist for documentation and future reference!
+
+<details>
+<summary>Having trouble? 🤷</summary><br/>
+
+- Make sure you've committed and pushed all your changes before creating the PR
+- Verify your GitHub authentication with `gh auth status` or `!gh auth status` in Copilot CLI
+- If the PR creation fails, check that you're on a branch different from main/master
+- To manually link an issue, edit the PR description to include "Closes #<issue-number>"
+- You can view PR details with `!gh pr view` or `!gh pr list` to see your PRs
+- For issues that don't close automatically, link them manually in the GitHub web interface
+- Remember to check that Copilot's review has been submitted before merging
+- Use `!gh pr merge --squash` to merge with a clean history
+
+</details>
