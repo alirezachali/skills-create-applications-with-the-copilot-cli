@@ -9,7 +9,7 @@ Duck is getting ready to develop a new Node.js CLI calculator app and plans to i
 
 GitHub Copilot CLI is a **standalone terminal application** that brings the power of GitHub Copilot directly to your command line. It is installed via npm and provides a rich interactive experience for developers.
 
-<img width="60%" height="60%" alt="CopilotCLI" src="../images/copilot-cli.png" />
+<img width="60%" height="60%" alt="CopilotCLI" src="https://github.com/alirezachali/skills-create-applications-with-the-copilot-cli/blob/main/.github/images/copilot-cli.png?raw=true" />
 
 #### Key capabilities and options to be aware of include:
 
@@ -123,9 +123,9 @@ Issue templates help maintain consistency when team members create issues. This 
 > [!NOTE]
 > When starting Copilot CLI, you may be prompted to add this folder to the trusted folder list and to key bindings. Respond **yes** to both prompts to continue.
 
-<img width="60%" height="60%" alt="CopilotCLIAddDir" src="../images/copilot-cli-add-directory.png" />
+<img width="60%" height="60%" alt="CopilotCLIAddDir" src="https://github.com/alirezachali/skills-create-applications-with-the-copilot-cli/blob/main/.github/images/copilot-cli-add-directory.png?raw=true" />
 <br />
-<img width="60%" height="60%" alt="CopilotCLITerminalBindings" src="../images/copilot-cli-terminal-bindings.png" />
+<img width="60%" height="60%" alt="CopilotCLITerminalBindings" src="https://github.com/alirezachali/skills-create-applications-with-the-copilot-cli/blob/main/.github/images/copilot-cli-terminal-bindings.png?raw=true" />
 
 
 2. Authorize with GitHub (if not already authenticated) in the Copilot CLI:
@@ -201,7 +201,7 @@ Issue templates help maintain consistency when team members create issues. This 
 > Respond **yes** to creating the issue and
 > **"Yes, and approve `gh issue` or `git config` for the rest of the running session"**.
 
-<img width="60%" height="60%" alt="CopilotCLIPerms" src="../images/copilot-cli-permissions.png" />
+<img width="60%" height="60%" alt="CopilotCLIPerms" src="https://github.com/alirezachali/skills-create-applications-with-the-copilot-cli/blob/main/.github/images/copilot-cli-permissions.png?raw=true" />
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
